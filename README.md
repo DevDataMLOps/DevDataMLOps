@@ -2,7 +2,7 @@
 
 I build data pipelines that turn fragmented source data into validated, auditable datasets, analytics, and APIs.
 
-My work focuses on **data quality, query efficiency, access controls, and recovery from failure**. This portfolio includes an AWS financial analytics platform, a governed healthcare data pipeline, and a climate-health intelligence project.
+My work focuses on **data quality, query efficiency, access controls, and recovery from failure**. This portfolio includes an AWS financial analytics platform, a governed healthcare data pipeline, a BigQuery telecom ETL platform, and a climate-health intelligence project.
 
 **Open to full-time cloud/data engineering roles and technical contract projects.**
 
@@ -54,11 +54,22 @@ A three-person hackathon project combining ASEAN health indicators, simulated cl
 
 *Hackathon decision-support demonstration; simulated events and deterministic risk scores do not establish a validated outbreak forecast.*
 
+### [Telecom Data Revolution — Validated ETL & BigQuery Analytics](https://github.com/DevDataMLOps/Telecom-Data-Revolution)
+
+**Python · pandas · Mage · Google Cloud · BigQuery · SQL**
+
+A batch ETL platform that validates telecom churn data, quarantines invalid records with reason codes, and publishes analytics-ready datasets to BigQuery.
+
+- Profiled **243,553 source records**, producing **223,966 curated records** and **19,587 quarantined records**.
+- Verified both BigQuery data counts after two pipeline runs, with **two audit records** retained.
+- Uses full-refresh loading for curated and quarantine tables, append-only audit records, and load-time partitioning.
+
+[Execution evidence](https://github.com/DevDataMLOps/Telecom-Data-Revolution#execution-evidence) · [Data contract](https://github.com/DevDataMLOps/Telecom-Data-Revolution/blob/main/docs/architecture/phase-2-data-contract.md) · [Deployment runbook](https://github.com/DevDataMLOps/Telecom-Data-Revolution/blob/main/docs/runbooks/bigquery-deployment.md)
+
 ## Additional focused projects
 
 | Project | Engineering focus | Review scope |
 |---|---|---|
-| [Telecom Data Revolution](https://github.com/DevDataMLOps/Telecom-Data-Revolution) | Mage orchestration, BigQuery loading, contracts, quarantine, and audit records | README documents 243,553 input records, 223,966 curated records, and 19,587 quarantined records |
 | [AeroMart semantic vector pipeline](https://github.com/DevDataMLOps/Building-A-Semantic-Vector-Database-) | PySpark joins, Parquet tables, text chunking, and embeddings | Learning prototype; vector indexing and retrieval are future work |
 | [CoffeeClub PostgreSQL analytics](https://github.com/DevDataMLOps/CoffeeClub-Capstone) | Relational integrity, indexing, transformations, and analytical views | Focused SQL capstone; performance gains require benchmarking |
 
@@ -68,6 +79,7 @@ A three-person hackathon project combining ASEAN health indicators, simulated cl
 |---|---|
 | Languages and processing | Python, SQL, pandas, PySpark |
 | AWS data platform | S3, Glue, Athena, Lambda |
+| Google Cloud and orchestration | BigQuery, Mage |
 | Governance and operations | IAM, KMS, Lake Formation, CloudWatch, EventBridge |
 | Serving and storage | FastAPI, PostgreSQL, SQLite, Streamlit |
 | Delivery and verification | Git, Docker Compose, pytest, GitHub Actions |
