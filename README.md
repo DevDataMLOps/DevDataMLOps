@@ -54,6 +54,14 @@ A three-person hackathon project combining ASEAN health indicators, simulated cl
 
 *Hackathon decision-support demonstration; simulated events and deterministic risk scores do not establish a validated outbreak forecast.*
 
+## Additional focused projects
+
+| Project | Engineering focus | Review scope |
+|---|---|---|
+| [Telecom Data Revolution](https://github.com/DevDataMLOps/Telecom-Data-Revolution) | Mage orchestration, BigQuery loading, contracts, quarantine, and audit records | README documents 243,553 input records, 223,966 curated records, and 19,587 quarantined records |
+| [AeroMart semantic vector pipeline](https://github.com/DevDataMLOps/Building-A-Semantic-Vector-Database-) | PySpark joins, Parquet tables, text chunking, and embeddings | Learning prototype; vector indexing and retrieval are future work |
+| [CoffeeClub PostgreSQL analytics](https://github.com/DevDataMLOps/CoffeeClub-Capstone) | Relational integrity, indexing, transformations, and analytical views | Focused SQL capstone; performance gains require benchmarking |
+
 ## Engineering toolkit
 
 | Area | Technologies demonstrated in these projects |
